@@ -37,4 +37,4 @@ console.log("===================== Step 2 ===================================");
 console.log("Addition of three values",result);
  }
  addThreeValues(10.23,600,40)
- addThreeValues("Hello"," Good"," Morning")
+ addThreeValues("Hello"," Good","Morning")
