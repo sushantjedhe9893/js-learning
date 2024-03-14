@@ -20,3 +20,18 @@ console.log("========== indexOf() ==================");
 var greet = "Good Morning";
 var indexOfM = greet.indexOf('M');
 console.log("Index of char M is: ", indexOfM);
+
+console.log("==================================================");
+
+function totalWords(){
+    var happy = "I am happy"
+    var resultValue = happy.split(" ")
+    console.log(resultValue);
+    console.log(`total words are : ${resultValue.length}`);
+    var learning = "I am learning js the language of internet ";
+    var result = learning.split(" ");
+    console.log(result);
+    console.log(`total words are : ${result.length}`);
+}
+
+totalWords()
