@@ -50,6 +50,6 @@ function stringHandsOn(){
     console.log(`---------------------------------------------------------------------------------------------------`);
 
     var stringStart = sentenceTrim.startsWith("Hey");
-    console.log(`Step 9 : Check is string starts with word "Hey" after trimming after step 3 output is : ${stringStart}`);
+    console.log(`Step 10 : Check is string starts with word "Hey" after trimming after step 3 output is : ${stringStart}`);
     }
     stringHandsOn()
