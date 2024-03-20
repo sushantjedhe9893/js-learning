@@ -22,7 +22,7 @@ for (let index = 0; index <=5; index++) {
 }
 console.log(`-> ${sum}`);
 
-console.log(`3. Odd position chars of string1 & string2`);
+console.log(`3. Odd position chars of string1`);
 
 function oddPositionedChars(word){
 for (let index = 0; index < word.length; index++) {
@@ -35,4 +35,18 @@ for (let index = 0; index < word.length; index++) {
 
 }
 oddPositionedChars("Hard work always pays back")
+
+console.log(`3. Odd position chars of string2`); 
+
+
+function oddPositionedChars(word){
+    for (let index = 0; index < word.length; index++) {
+        const element = word.charAt(index);
+        if(index%2!=0 && element != " "){
+            console.log(element);
+        }
+        
+    }
+    
+    }
 oddPositionedChars("Soon i will be  UI IT Champ")
