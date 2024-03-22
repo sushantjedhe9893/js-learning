@@ -1,11 +1,17 @@
 console.log(`------------------------ Step 1 ----------------------------------`);
 
-var result = function(n1,n2){
+var result = function greaterNumber(n1,n2){
 var res = n1>n2 ? "800 is greater than 899":"899 is greater than 800";
 console.log(res);
 }
-result(10, -10);
 result(800,899);
+
+
+var result = function greaterNumber(n1,n2){
+    var res = n1>n2 ? "10 is greater than -10":"-10 is greater than 10";
+    console.log(res);
+    }
+    result(10, -10);
 
 console.log(`------------------------ Step 2 ----------------------------------`);
 
