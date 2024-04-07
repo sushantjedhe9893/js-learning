@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <h2>Local Storage</h2>
+
+    <script>
+        window.localStorage.setItem("First Name", "SUSHANT");
+        window.localStorage.setItem("Last Name", "JEDHE");
+        window.localStorage.setItem("Country", "INDIAN")
+        
+        const result = window.localStorage.getItem("First Name");
+        console.log(result);
+
+        const result1 = window.localStorage.removeItem("Last Name");
+        console.log(result1);
+
+        const result2 = window.localStorage.key(1);
+        console.log(result2);
+
+        const result3 = window.localStorage.length;
+        console.log(result3);
+
+        // const result4 = window.sessionStorage.clear();
+        // console.log(result4);
+    </script>
+</body>
+</html>
