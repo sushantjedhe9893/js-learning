@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch built in Function</title>
+</head>
+<body>
+    <h2> Product List </h2>
+    <ul id="productList"> </ul>
+
+    <script>
+        async function fetchProduct(){
+            const productsResponse  = await fetch('https://fakestoreapi.com/products');
+            const products = await productsResponse.json();
+
+            const elementUL = document.querySelector('#productList');
+
+            products.forEach(product => {
+                console.log(product.title);
+
+                // Creating li element
+                const liElement = document.createElement('li');
+                liElement.innerHTML = product.title;
+                elementUL.appendChild(liElement);
+            });
+        }
+        fetchProduct();
+    </script>
+</body>
+</html>
